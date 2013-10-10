@@ -29,6 +29,7 @@
 		include("headerprof.php");
 		$_SESSION[username]=$_POST[username];
 		$_SESSION[usertype]="prof";
+		header("Location: existing.php");
 	}
 
 	else
@@ -48,6 +49,7 @@
 			include("header.php");
 			$_SESSION[username]=$_POST[username];
 			$_SESSION[usertype]="student";
+			header("Location: existing.php");
 		}
 		else
 		{

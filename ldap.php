@@ -29,7 +29,10 @@
 		include("headerprof.php");
 		$_SESSION[username]=$_POST[username];
 		$_SESSION[usertype]="prof";
-		header("Location: existing.php");
+		// header("Location: existing.php");
+            	// The above header is generating header already sent warning and not re-directing the page on some server, while in local xampp it works..
+            	// Hence fixing this by including the whole existing.php here
+            	include("existing.php");
 	}
 
 	else
@@ -49,7 +52,10 @@
 			include("header.php");
 			$_SESSION[username]=$_POST[username];
 			$_SESSION[usertype]="student";
-			header("Location: existing.php");
+			// header("Location: existing.php");
+            		// The above header is generating header already sent warning and not re-directing the page on some server, while in local xampp it works..
+            		// Hence fixing this by including the whole existing.php here
+            		include("existing.php");
 		}
 		else
 		{

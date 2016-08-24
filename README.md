@@ -17,4 +17,4 @@ A professor can accept/reject a students request, with/without mentioning a reas
 Authors
 =======
 Jagan Mohan Ungati (https://github.com/jagan387)
-Krish Perumal (krishperumal.com)
+Krish Perumal (http://krishperumal.com)
